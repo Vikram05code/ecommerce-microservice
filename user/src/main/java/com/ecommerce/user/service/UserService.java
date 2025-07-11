@@ -1,7 +1,9 @@
 package com.ecommerce.user.service;
 
-import com.app.ecom.dtos.UserRequest;
-import com.app.ecom.dtos.UserResponse;
+
+
+import com.ecommerce.user.dtos.UserRequest;
+import com.ecommerce.user.dtos.UserResponse;
 
 import java.util.List;
 import java.util.Optional;
