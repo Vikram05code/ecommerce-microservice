@@ -2,7 +2,7 @@ spring:
   application:
     name: product
   datasource:
-    url: jdbc:postgresql://localhost:5432/productdb
+    url: jdbc:postgresql://localhost:5432/productDB
     username: vikram
     password: vikram
   jpa:
