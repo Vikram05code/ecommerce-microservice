@@ -12,12 +12,12 @@ public interface UserService {
 
     List<UserResponse> getAllUsers();
 
-    Optional<UserResponse> getUserById(Long id);
+    Optional<UserResponse> getUserById(String id);
 
     void createUser(UserRequest userRequest);
 
-    Boolean updateUser(Long id, UserRequest userRequest);
+    Boolean updateUser(String id, UserRequest userRequest);
 
-    void deleteUser(Long id);
+    void deleteUser(String id);
 
 }
