@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class User {
 
     @Id
-    private Long id;
+    private String id;
     private String firstName;
     private String lastName;
     @Indexed(unique = true)

@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public Optional<UserResponse> getUserById(Long id) {
+    public Optional<UserResponse> getUserById(String id) {
         return userRepository.findById(id).map(this::mapToUserResponse);
     }
 
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public Boolean updateUser(Long id, UserRequest userRequest) {
+    public Boolean updateUser(String id, UserRequest userRequest) {
        return userRepository.findById(id).map(existingUser ->{
            mapToUserFromRequest(existingUser, userRequest);
            userRepository.save(existingUser);
@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void deleteUser(Long id) {
+    public void deleteUser(String id) {
         userRepository.deleteById(id);
 
     }
