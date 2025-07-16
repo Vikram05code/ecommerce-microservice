@@ -4,7 +4,7 @@ spring:
     name: user
   data:
     mongodb:
-      uri: mongodb://localhost:27017/userDB
+      uri: mongodb+srv://vikram5code:TByBtnupPeLMjs4c@user-data.p5uy1rg.mongodb.net/?retryWrites=true&w=majority&appName=user-data
       database: userDB
 server:
   port: 8082
