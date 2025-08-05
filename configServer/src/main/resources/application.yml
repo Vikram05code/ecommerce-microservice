@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Vikram05code/Microservice_config_server
+server:
+  port: 8888
