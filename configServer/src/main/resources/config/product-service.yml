@@ -1,0 +1,14 @@
+spring:
+  datasource:
+#    url: jdbc:postgresql://localhost:5432/productDB
+    url: jdbc:postgresql://ep-flat-band-a1w1udex-pooler.ap-southeast-1.aws.neon.tech/productDB?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_nzLkBHQSVX20
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
