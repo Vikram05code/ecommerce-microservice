@@ -6,7 +6,7 @@
 #spring.jpa.hibernate.ddl-auto=update
 spring:
   application:
-    name: order
+    name: order-service
   config:
     import: optional:configserver:http://localhost:8888
 
