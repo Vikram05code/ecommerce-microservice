@@ -5,7 +5,7 @@ spring:
       uri: ${MONGODB_URI}
       database: userDB
   rabbitmq:
-    hotst: loclahost
+    hots: localhost
     port: 5672
     username: guest
     password: guest

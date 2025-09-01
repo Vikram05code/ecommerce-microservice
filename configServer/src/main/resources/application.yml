@@ -8,10 +8,10 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/config
+          search-locations: file:///:/E:\Udemy_Courses\EmbarkX_Microservices\Microservices\ecommerce-microservice\configserver\src\main\resources\config
 
   rabbitmq:
-    hotst: loclahost
+    host: localhost
     port: 5672
     username: guest
     password: guest
@@ -22,5 +22,5 @@ server:
 management:
   endpoints:
     web:
-      exposure:
-        include:"*"
+        exposure:
+            include: "*"
