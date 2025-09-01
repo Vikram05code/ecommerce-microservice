@@ -4,6 +4,17 @@ spring:
     mongodb:
       uri: ${MONGODB_URI}
       database: userDB
+  rabbitmq:
+    hotst: loclahost
+    port: 5672
+    username: guest
+    password: guest
+
 server:
   port: 8082
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:"*"
