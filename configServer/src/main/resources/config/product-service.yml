@@ -13,5 +13,18 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  rabbitmq:
+    hotst: loclahost
+    port: 5672
+    username: guest
+    password: guest
+
 server:
   port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:"*"
